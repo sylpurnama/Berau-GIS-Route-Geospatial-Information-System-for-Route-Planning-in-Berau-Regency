@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistem Informasi Geospasial Rute Perjalanan</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="left-header">
+      <div class="logo">
+        <img src="https://polteksimasberau.ac.id/wp-content/uploads/2025/03/Logo-Poltek-Simas-Berau-Compress.webp" alt="Logo PSB"/>
+      </div>
+      <div class="institution-text">
+        <b>Politeknik Sinar Mas Berau Coal</b><br>
+        Program Studi Survei dan Pemetaan
+      </div>
+    </div>
+    <div class="system-title">
+      Berau GIS Route: Geospatial Information System for Route Planning <br>
+      with Carbon Footprint Analysis in Berau Regency
+    </div>
+  </div>
+
+  <!-- Peta -->
+  <div id="map"></div>
+
+  <!-- Sidebar -->
+  <div class="search-container">
+    <div class="search-box">
+      <label for="searchInput">Search Location</label>
+      <input type="text" id="searchInput" class="search-input" placeholder="Masukkan lokasi di Berau...">
+      <button id="searchButton">Search</button>
+    </div>
+    <hr>
+    <div class="search-box">
+      <label for="startInput">Start Location</label>
+      <input type="text" id="startInput" class="search-input" placeholder="Masukkan asal (opsional)">
+      <button id="useCurrentButton">Gunakan Posisi Saat Ini</button>
+    </div>
+    <div class="search-box">
+      <label for="endInput">End Location</label>
+      <input type="text" id="endInput" class="search-input" placeholder="Masukkan tujuan (Berau)">
+    </div>
+    <div class="search-box">
+      <label for="vehicleSelect">Pilih Kendaraan</label>
+      <select id="vehicleSelect">
+        <option value="0.114">Sepeda Motor (0.114 kg CO₂eq/km)</option>
+        <option value="0.170">Mobil Bensin (0.170 kg CO₂eq/km)</option>
+        <option value="0.171">Mobil Diesel (0.171 kg CO₂eq/km)</option>
+        <option value="0.047">Mobil Listrik (0.047 kg CO₂eq/km)</option>
+        <option value="0.097">Bus (0.097 kg CO₂eq/km)</option>
+        <option value="0.200">Truk Kecil (0.200 kg CO₂eq/km)</option>
+        <option value="0.350">Truk Besar (0.350 kg CO₂eq/km)</option>
+      </select>
+    </div>
+    <button id="routeButton">Find Route</button>
+    <button id="clearRouteButton">Clear Route</button>
+
+    <div id="result" class="result-box">
+      <b>Info Perjalanan:</b><br>
+      📏 Jarak: - <br>
+      ⏱️ Estimasi Waktu: - <br>
+      🌱 Emisi CO₂: - <br>
+      📊 Dampak Lingkungan: -
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
