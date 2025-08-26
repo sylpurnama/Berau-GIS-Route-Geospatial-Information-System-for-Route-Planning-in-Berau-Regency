@@ -23,6 +23,18 @@ It provides multi-point route planning, travel time estimation, and a carbon foo
 
 ---
 
+## 🖼 Example Output  
+
+Here is a preview of the system in action:  
+
+<p align="center">
+  <img src="assets/demo.png" alt="Demo Preview" width="800"/>
+</p>  
+
+*(Make sure your screenshot is saved in `assets/demo.png`, or update the path to match your directory structure.)*  
+
+---
+
 ## 🚀 Deployment  
 You can host this project for **free** using GitHub Pages:  
 
