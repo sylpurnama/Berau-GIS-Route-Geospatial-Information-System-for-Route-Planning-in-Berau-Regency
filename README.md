@@ -44,5 +44,4 @@ You can host this project for **free** using GitHub Pages:
 1. Fork or clone this repository.  
 2. Push your project to GitHub.  
 3. Go to **Repository Settings → Pages**.  
-4. Choose branch `main` (or `gh-pages`) and save.  
-5. Your application will be available at:  
+4. Choose branch `main` (or `gh-pages`) and save.   
