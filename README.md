@@ -28,12 +28,12 @@ It provides multi-point route planning, travel time estimation, and a carbon foo
 Here is a preview of the system in action:  
 
 <p align="center">
-  <img src="G1.png" alt="Demo Preview" width="800"/>
+  <img src="picture/G1.png" alt="Demo Preview" width="800"/>
 </p>  
 
 
 <p align="center">
-  <img src="G2.png" alt="Demo Preview" width="800"/>
+  <img src="picture/G2.png" alt="Demo Preview" width="800"/>
 </p>  
 
 ---
